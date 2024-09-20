@@ -1,0 +1,15 @@
+"language" instead of "lang" - Line 4
+No doctype
+No charset
+No </head> tag
+No closing </h1> tag - line 10
+No opening <p> tag - line 11
+<ol> tag closed with </ul> tag
+list item opened with </li> instead of <li> - line 19
+No closing </p> tag - line 26
+"Image.png" instead of "image.jpg" - line 28
+Link closed with </img> tag - line 30
+Closed with <td> instead of </td> - line 39
+"error.jpeg" instead of "error.jpg" - line 46
+No closing </html> tag
+Body and header not inside <html> tag
