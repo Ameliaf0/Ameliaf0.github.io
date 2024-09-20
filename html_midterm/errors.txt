@@ -1,15 +1,44 @@
-"language" instead of "lang" - Line 4
+find_errors.html file
 No doctype
 No charset
-No </head> tag
-No closing </h1> tag - line 10
-No opening <p> tag - line 11
-<ol> tag closed with </ul> tag
-list item opened with </li> instead of <li> - line 19
-No closing </p> tag - line 26
-"Image.png" instead of "image.jpg" - line 28
-Link closed with </img> tag - line 30
-Closed with <td> instead of </td> - line 39
-"error.jpeg" instead of "error.jpg" - line 46
-No closing </html> tag
-Body and header not inside <html> tag
+No </head tag>
+Line 1 - <html> is closed immediately <head> and <body> should be inside <html>
+Line 4 - <html language = "en"> needs to be <html lang = "en">
+Line 9 - No closing </h1> tag
+Line 11 - <p> is never opened, added </p>
+Line 19 - opened list with </li> instead of <li>
+Line 24 - the <ol> closes as </ul>, needs to close as </ol>
+Line 27 - Moved “this is another paragraph” to after image.jpg
+Line 28 - “Image.jpeg” needs to be all lowercase “image.jpg”
+Line 28 - img src needs an alt attribute, added alt = "I don't need sleep, I need Answers"
+Line 30 - <a> tag closed with </img> instead of </a>
+Line 45 - Missing closing </table> tag
+Line 46 - “source” instead of “src”
+Line 48 - No <p></p> tags
+Line 48 - Needs <s></s> tags
+Line 50 - bgcolor="lightgray" not allowed in a <p> tag, changed to <body style="background-color:lightgray;">
+Line 52 - changed  <input type="button" value="Click me"> to <a href="#"><input type="button" value="Click me"></a></input>
+Line 54 - No closing a> tag
+Line 55 - Link separate from <input> tag
+Line 56 - <p></p> closed before <em></em>
+Line 56 - <em></em> instead of <u></u>
+Line 58 - <li> instead of <dt> and <dd>
+Line 63 - changed <h2 style="color:Tomato;">Hello World<h3>  to <h2 style="color:Tomato;">Hello World</h2>
+
+
+Find_errors_2.html file
+No <html lang = "en">, added <html lang = "en">
+Line 3 - Added closing </head> tag AFTER </title> and before <h1></h1>
+Line 6 - <body> tag is missing closing > so added the closing > and moved in front of<h1>
+Line 7 - removed <html>
+Line 9 - added closing </strong> tag
+Line 9 - added closing </p> tag
+Line 9 - added closing </div> tag
+Line 12 - img href isn’t a thing, changed to img src
+Line 12 - “image 2.jpg” needs an underscore instead of space, changed to “image_2.jpg”	
+Line 12 - img src needs the alt attribute, added alt = "I can fix you"
+Line 13 - added opening <h2> tag
+Line 15 - added an opening <p> tag
+Line 16 - Commented out <this is a comment>
+Line 17 - added closing </body> tag
+Line 17 - </htm> instead of </html>
