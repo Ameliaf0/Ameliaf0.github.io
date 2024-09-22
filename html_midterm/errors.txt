@@ -1,3 +1,5 @@
+Amelia Fichera, Meghan Parsons
+
 find_errors.html file
 No doctype
 No charset
