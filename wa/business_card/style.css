@@ -8,7 +8,7 @@ body {
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
     font-size: 10px;
-    background-color: #ccc;
+    background-color: #ffffff;
   }
 
 /* first card */
@@ -83,7 +83,7 @@ body {
 
     /* card container setup */
 
-    .my_card {
+    #my_card {
       width: 35em;
       height: 22em;
       margin: 5em auto;
@@ -96,7 +96,7 @@ body {
   
     /* header and footer styles */
   
-    .my_card footer p {
+    #my_card footer p {
     font-size: 1.5em;
     line-height: 2em;
     }
@@ -106,34 +106,34 @@ body {
       line-height: 1.5em;
     }
   
-    .my_card header {
+    #my_card header {
       background-image: lightpink;
       border-radius: 1.5em 1.5em 0 0;
     }
     
-    .my_card footer {
+    #my_card footer {
       background-image: lightpink;
       border-radius: 0 0 1.5em 1.5em;
     }
   
-    .my_card header, .my_card footer {
+    #my_card header, .my_card footer {
       height: 3em;
       padding: 1em;
     }
   
     /* main business card contents */
   
-    .my_card article img{
+    #my_card article img{
       max-height: 100%;
       float: right;
     }
   
-    .my_card article {
+    #my_card article {
       background-color: rgba(175, 0, 188, 0.28);
       height: 12em;
     }
   
-  .my_card article p {
+  #my_card article p {
     padding-top: 1.5em;
     padding-left: 1em;
     color: black;
