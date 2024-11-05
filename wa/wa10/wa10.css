@@ -1,6 +1,8 @@
 body {
     font-family: helvetica, sans-serif;
     width: 350px;
+    margin-left: 40%;
+    margin-top: 10%;
   }
 
   label {
@@ -13,12 +15,17 @@ body {
 
   input[type="text"] {
     padding: 5px;
-    width: 150px;
+    width: 200px;
   }
 
   p {
-    background: #ffc125;
+    background: peachpuff;
     color: #5e2612;
     padding: 10px;
     visibility: hidden;
+  }
+
+  .randomize {
+    background-color: pink;
+    margin-left: 20px;
   }
