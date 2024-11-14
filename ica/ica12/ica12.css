@@ -1,0 +1,36 @@
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: pink;
+
+}
+.get-fact {
+    position: absolute;
+    background-image: paw;
+}
+
+.paw {
+    height: 50px;
+    padding-left: 50px;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    width: 300px;
+}
+
+
