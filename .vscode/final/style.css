@@ -1,0 +1,44 @@
+
+  
+#Header {
+    position: sticky;
+    top: 0; /* Sticks to the top of the screen */
+    z-index: 1000; /* Keeps it above other elements */
+    padding: 15px;
+  }
+  
+  #Header ul {
+    list-style-type: none;
+    background-color: black;
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    margin: 0;
+    padding: 10px 0;
+    height: 50px; /* Increased height for better visual balance */
+  }
+  
+  #Header li a{
+    text-decoration: none;
+    color: #F6F0ED;
+    padding: 16px 30px;
+    font-size: 20px;
+    /* transition: color 0.4s, font-size 1s; */
+  
+  }
+  
+  #Header li a:hover{
+    background-color: #7EA8BE;
+    color:#F6F0ED; 
+    
+  }
+  
+  #Header li a:active{
+    background-color: #C2948A;
+    color:black; 
+  }
+  
+  .logo {
+    margin-right: auto;
+    padding-left: 20px; 
+    width: 10px;
+  }
