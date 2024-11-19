@@ -37,8 +37,9 @@
     color:black; 
   }
   
-  .logo {
+  #Header .logo img{
     margin-right: auto;
     padding-left: 20px; 
-    width: 10px;
+    width: 100px;
+    height: auto;
   }
