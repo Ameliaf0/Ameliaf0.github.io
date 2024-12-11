@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Project One",
+            "description": "Description of project one.",
+            "image": "img/project1.png",
+            "link": "https://sawyerreinig.github.io/CSS-Project-Part-1/index.html"
+        },
+        {
+            "title": "Project Two",
+            "description": "Description of project one.",
+            "image": "img/poster-draft2.jpg",
+            "link": "http://linktoyourproject1.com"
+        },
+        {
+            "title": "Project Three",
+            "description": "Description of project one.",
+            "image": "img/candy.png",
+            "link": "http://linktoyourproject1.com"   
+        }
+    ]
+}
