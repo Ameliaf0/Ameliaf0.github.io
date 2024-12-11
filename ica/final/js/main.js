@@ -1,4 +1,4 @@
-fetch('projects.json')
+fetch('/ica/final/projects.json')
     .then(response => response.json())
     .then(data => {
         displayProjects(data.projects);
@@ -15,7 +15,7 @@ fetch('projects.json')
             projectElement.innerHTML = `
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
-                <img src="${project.image}" alt="${project.title}">
+                <img src="${project.image1}" alt="${project.title}">
                 <a href="${project.link}" target="_blank">View Project</a>
             `;
     
