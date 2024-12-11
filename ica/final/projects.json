@@ -4,14 +4,14 @@
             "title": "Project One",
             "description": "Description of project one.",
             "image1": "/ica/final/img/project1.png",
-            "image2": "/ica/final/img/project1.png",
+            "image2": "/ica/final/img/project2.png",
             "link": "https://sawyerreinig.github.io/CSS-Project-Part-1/index.html"
         },
         {
             "title": "Project Two",
             "description": "Description of project one.",
             "image1": "/ica/final/img/poster-draft2.jpg",
-            "image2": "/ica/final/img/project1.png",
+            "image2": "/ica/final/img/poster-draft.jpg",
             "link": "http://linktoyourproject1.com"
         },
         {
