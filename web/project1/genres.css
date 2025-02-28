@@ -1,0 +1,100 @@
+nav {
+    position: sticky;
+    top: 0; /* Sticks to the top of the screen */
+    z-index: 1000; /* Keeps it above other elements */
+    background-color: #f4cd4b;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 0;
+
+
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.column1 {
+    max-width: 600px;
+    margin-right: 100px;
+}
+
+
+
+.ad {
+    background-color: black;
+    padding: 150px;
+    padding-left: 100px;
+    
+}
+
+.book {
+    width: 110px;
+}
+
+#more {
+    text-align: right;
+}
+
+#related ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    list-style-type: none;
+}
+
+.giveaways{
+    display: inline;
+    display: flex;
+    margin-top: 50px;
+}
+
+.giveaways h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.giveaways img{
+    height: 150px;
+    margin-right: 50px;
+}
+
+.author {
+    margin-top: 0px;
+}
+
+.details p{
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.enter {
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 5px 10px;
+}

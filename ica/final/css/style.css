@@ -1,29 +1,32 @@
 body {
-    background-color: rgb(10, 10, 52);
+    /*background-color: rgb(10, 10, 52);*/
     margin: 0;
 }
   
 #Header {
-    position: sticky;
-    top: 0; /* Sticks to the top of the screen */
-    z-index: 1000; /* Keeps it above other elements */
-    padding: 15px;
-    margin-top: 0;
-  }
+  position: sticky;
+  top: 0; /* Sticks to the top of the screen */
+  z-index: 1000; /* Keeps it above other elements */
+  padding: 15px;
+  margin: 0;
+  padding: 15px 0;
+  height: 50px; /* Increased height for better visual balance */
+  background-color: rgb(10, 10, 52);
+  display: flex;
+  align-items: center;
+}
   
   #Header ul {
     list-style-type: none;
-    background-color: black;
     display: flex;
     align-items: center; /* Aligns items vertically */
-    margin: 0;
-    padding: 10px 0;
-    height: 50px; /* Increased height for better visual balance */
+    justify-content: flex-end;
+    margin-right: 50px;
   }
   
   #Header li a{
     text-decoration: none;
-    color: #F6F0ED;
+    color: #E9DED1;
     padding: 16px 30px;
     font-size: 20px;
     /* transition: color 0.4s, font-size 1s; */
@@ -37,29 +40,42 @@ body {
   }
   
   
-  #Header .logo img{
+  .logo{
+    display: block;
     margin-right: auto;
-    padding-left: 20px; 
+    padding-left: 100px; 
     width: 300px;
     height: auto;
     margin-top: 15px;
   }
 
-  #about p{
-    width: 830px;
-    display: block;
-    margin-left: 17px;
-    margin-right: auto;
-    background-color: #E9DED1;
+
+  #about {
+    display: flex;
+    align-items: center;
     padding: 50px;
-    padding-right: 327px;
-    padding-left: 500px;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-left: 25vw;
+}
+
+#about img {
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#about p {
+    width: 25vw;
+    padding-left: 50px;
+}
+
+  h2 {
+    font-size: 40px;
+    margin-left: 30vw;
   }
 
   #footer {
-    display: block;
+    display: inline-block;
     margin-right: auto;
     position: relative;
     bottom: 0;
