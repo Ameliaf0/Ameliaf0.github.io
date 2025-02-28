@@ -2,15 +2,15 @@ body {
     background-color:black;
     color: azure;
     display: flex;
+    flex-direction: row;
+    justify-content: ;
 }
 
 .intro {
     width: 400px;
     position: relative;
     margin: 0;
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+
 }
 
 .carousel {
@@ -43,4 +43,8 @@ body {
 }
 .carousel p.active {
     opacity: 1;
+}
+
+.active_items{
+    display: flex;
 }

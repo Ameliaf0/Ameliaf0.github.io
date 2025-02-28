@@ -12,3 +12,5 @@ function showNextImage() {
 }
 
 document.querySelector('.carousel').addEventListener('click', showNextImage);
+const active_items = document.querySelectorAll('active_items');
+active_items.appendChild('active')
