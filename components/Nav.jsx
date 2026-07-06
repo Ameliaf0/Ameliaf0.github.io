@@ -27,7 +27,6 @@ export default function Nav() {
     >
       <Link href="/" id="logo">Huck N' Pray</Link>
       <div>
-        <Link href="/music">Music</Link>
         <Link href="/tour">Tour</Link>
         <Link href="/merch">Merch</Link>
         <Link href="/about">About</Link>
