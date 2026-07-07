@@ -40,8 +40,12 @@ export async function POST(req) {
     limit: 100,
   })
 
+    console.log('Session shipping:', JSON.stringify(session.shipping_details))
+    console.log('Line items:', JSON.stringify(lineItems.data))
+
+
   const address = session.shipping_details?.address
-    ? `${session.shipping_details.address.line1}${session.shipping_details.address.line2 ? ', ' + session.shipping_details.address.line2 : ''}, ${session.shipping_details.address.city}, ${session.shipping_details.address.state} ${session.shipping_details.address.postal_code}, ${session.shipping_details.address.country}`
+    ? `${session.shipping_details.address.line1}${session.shipping_details.address.line2 ? ', ' + session.shipping_details.address.line2 : ''}, ${session.shipping_details.address.city}, ${session.shipping_details.address.state} ${session.shipping_details.address.postal_code}`
     : ''
 
   // Log one row per line item
@@ -57,7 +61,7 @@ export async function POST(req) {
       paymentId: session.payment_intent,
       status: 'Pending',
     }
-
+    console.log('Logging order:', JSON.stringify(order))
     await logOrderToSheets(order)
   }
 }
