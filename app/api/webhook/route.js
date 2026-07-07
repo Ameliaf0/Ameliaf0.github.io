@@ -3,10 +3,14 @@ import stripe from '../../../lib/stripe'
 import { logOrderToSheets } from '../../../lib/sheets'
 
 export const runtime = 'nodejs'
+const processedEvents = new Set()
 
 export async function POST(req) {
   const body = await req.text()
   const sig = req.headers.get('stripe-signature')
+  if (!sig) {
+    return NextResponse.json({ error: 'No signature' }, { status: 400 })
+  }
 
   let event
   try {
@@ -22,6 +26,19 @@ export async function POST(req) {
 
  if (event.type === 'checkout.session.completed') {
   const session = event.data.object
+
+  // Ignore duplicate events
+  if (processedEvents.has(event.id)) {
+    return NextResponse.json({ received: true, duplicate: true })
+  }
+  processedEvents.add(event.id)
+
+  if (event.type === 'checkout.session.completed') {
+    const session = event.data.object
+
+    const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
+      limit: 100,
+    })
 
   // Fetch line items to get individual products
   const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
