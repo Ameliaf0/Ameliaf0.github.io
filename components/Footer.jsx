@@ -36,7 +36,7 @@ export default function Footer() {
         {/* Brand column */}
         <div className="footer-brand">
           <p className="footer-logo">Huck N' Pray</p>
-          <p className="footer-tagline">Psychedelic · Surfy · Rock<br />Boulder, CO</p>
+          <p className="footer-tagline">Psychedelic Surf Rock<br />Boulder, CO</p>
           <div className="footer-social">
             <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><FaInstagram size={18} /></a>
             <a href="https://youtube.com/@yourchannel" target="_blank" aria-label="YouTube"><FaYoutube size={18} /></a>

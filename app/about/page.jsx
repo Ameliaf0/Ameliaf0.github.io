@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="about-intro-text">
           <h1>Meet the Band</h1>
           <p>
-            Described by Highwire Daze Magazine as "Fire Personified," Huck N' Pray
+            Huck N' Pray
             is a psychedelic, surfy, rock band hailing from the lively music scene
             of Boulder, Colorado. Formed in fall 2024 through deep dorm jams and
             pop-up performances on campus, a shared love for genre-bending,
