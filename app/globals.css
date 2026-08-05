@@ -1375,7 +1375,7 @@ ul li span:last-of-type {
 /* ── Responsive ── */
 
 @media (max-width: 1024px) {
-  nav #logo { margin-left: 0; }
+  nav #logo { margin-left: 30px; }
   .nav-social { margin-left: 0; }
 
   .tv-content-grid {
